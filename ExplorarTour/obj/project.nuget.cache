@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ljJrDESU9kzglpODNZ2eeOe1LTunnpYDNF0OSXNdmD62kAFUcuBo2wzH21BtfsH7cDN+g5DbZnRiyXKc2sbNkQ==",
+  "dgSpecHash": "TmTg5tynXMoeN4v6PNiTbbRuKQZQCX+/+9saD8VMeFdLHvkyHrhyt5ImR1wECgsc6WbzGxHZ4dzcl3LV7zEIrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\ExplorarTour.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\ExplorarTour.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nanny\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.11\\microsoft.netcore.app.host.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\nanny\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\nanny\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\nanny\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
