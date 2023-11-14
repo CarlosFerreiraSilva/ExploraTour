@@ -4,6 +4,8 @@
 @{
     <html>
     <head>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <style>
             .content i {
                 margin-bottom: 41px;
@@ -153,7 +155,9 @@
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container" data-aos="fade-up"
+             data-aos-duration="3000"
+            >
             <div class="content">
                 <h1 style="color:black; font-family:fantasy;">EXPLORA TOUR</h1>
                 <form class="content__form">
@@ -184,6 +188,9 @@
             </div>
         </div>
     </body>
+    <script>
+        AOS.init();
+    </script>
     </html>
 
 }
