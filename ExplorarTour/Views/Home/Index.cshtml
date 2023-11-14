@@ -12,10 +12,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg " style="background-color:rgba(45,136,253,1); color:white;">
-        <a class="navbar-brand" asp-controller="Home" asp-action="Index" style="color:white;">Explora Tour</a>
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index" style="color:white; font-weight:bold;">Explora Tour</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,44 +33,64 @@
                     <a class="nav-link" asp-controller="Home" asp-action="Index" style="color:white;">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <img src="IMG" />
                     <a class="nav-link" asp-controller="Cadastro" asp-action="Cadastrar" style="color:white;">Fazer Login</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Carrossel -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
 
-        <!-- Controles do Carrossel -->
-        <a style="height: 40%;margin-top:140px;" class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a style="height: 40%;margin-top:140px;" class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
+    <div data-aos="fade-up" style="width: 100%; display: flex; align-content: center; align-items: center; text-align: center; justify-content: center; margin-top:45px;">
+        <img src="~/img/telainicial.PNG" style="width:75%; box-shadow:5px 5px 5px grey;" alt="Minha Imagem">
     </div>
 
-    <div class="whatsapp-float">
-        <a href="contato.html" target="_blank" rel="noopener noreferrer">
-            <div class="whatsapp-icon">
-                <img src="file:///C:/Users/android/Downloads/pngtree-telephone-vector-icon-with-circle-frame-png-image_2453561.jpg" alt="Ícone do WhatsApp">
+    <div data-aos="fade-up" style="width: 100%; display: flex;  justify-content: center; margin-top:30px;">
+        <div style="width: 75%;">
+            <h1 style="font-size:40px;font-weight:bold;">Temos ótimas propostas para você curtir sua viagem com a sua família!</h1>
+            <hr />
+            <p style="font-size:22px">
+                Além de termos ótimas opções para você fazer uma viagem divertida e de acordo com os seus gostos, garantimos essas viagens com lugares bonitos e ambientes agradáveis para a sua diversão.
+
+            </p>
+
+            <h2 style="font-size: 40px; font-weight: bold; margin-top: 70px;">
+                Estados mais visitados do brasil
+            </h2>
+            <hr />
+        </div>
+
+    </div>
+    <div data-aos="fade-up">
+        <div class="turismo" style="display:flex; align-content: center; align-items: center; text-align: center; justify-content: center; width: 100%;">
+            <div class="row" style="width: 75%;">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img style="height:240px;" src="~/img/Melhor-Hotel-Luxo (1).jpg" alt="Piauí">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img style="height:240px;" src="~/img/restaurante1.webp" alt="Mato Grosso">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img style="height:240px;" src="~/img/viajar-para-a-praia-640w.webp" alt="Ceará">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </a>
+        </div>
     </div>
-
-
 </body>
-
-<!-- Scripts do Bootstrap -->
-
-
-
-
-
+<script>
+    AOS.init();
+</script>
 </html>
 
 

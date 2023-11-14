@@ -13,6 +13,34 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\wwwroot\\img\\ExploraTour.jpg",
+      "PackagePath": "staticwebassets\\img\\ExploraTour.jpg"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\wwwroot\\img\\Melhor-Hotel-Luxo (1).jpg",
+      "PackagePath": "staticwebassets\\img\\Melhor-Hotel-Luxo (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\wwwroot\\img\\restaurante1.webp",
+      "PackagePath": "staticwebassets\\img\\restaurante1.webp"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\wwwroot\\img\\telainicial.PNG",
+      "PackagePath": "staticwebassets\\img\\telainicial.PNG"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\wwwroot\\img\\terra.png",
+      "PackagePath": "staticwebassets\\img\\terra.png"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\wwwroot\\img\\terra2.png",
+      "PackagePath": "staticwebassets\\img\\terra2.png"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\wwwroot\\img\\viajar-para-a-praia-640w.webp",
+      "PackagePath": "staticwebassets\\img\\viajar-para-a-praia-640w.webp"
+    },
+    {
       "Id": "C:\\Users\\android\\Documents\\projetoConstrucoaCivil\\ExploraTour\\ExplorarTour\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
