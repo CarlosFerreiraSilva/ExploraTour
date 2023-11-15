@@ -60,3 +60,11 @@ C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\obj\Debug\net6.0\ref
 C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\obj\Debug\net6.0\ExplorarTour.pdb
 C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\obj\Debug\net6.0\ExplorarTour.genruntimeconfig.cache
 C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\obj\Debug\net6.0\ref\ExplorarTour.dll
+C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\bin\Debug\net6.0\Dapper.dll
+C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nanny\OneDrive\Documentos\ExploraTour\ExplorarTour\obj\Debug\net6.0\ExplorarTour.csproj.CopyComplete

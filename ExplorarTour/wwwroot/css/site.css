@@ -109,9 +109,9 @@ h1 {
     margin-bottom: 20px;
 }
 
-.nav-link:hover {
+.nav-item:hover {
     border-bottom: solid 2px rgba(82,215,246,1);
-    font-weight:bold;
-    transform:scale(1.1);
-    animation:ease-in-out;
+    font-weight: bold;
+    transform: scale(1.1);
+    animation: ease-in-out;
 }

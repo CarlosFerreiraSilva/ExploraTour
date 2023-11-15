@@ -1,7 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
 }
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -24,17 +25,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  
+
                     <a class="nav-link" asp-controller="Home" asp-action="Index" style="color:white; display:flex;">
                         <img style="width:22px;" src="~/img/casa (1).png" />
                         <span>&nbsp;Início</span>
-                        </a>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" asp-controller="Destinos" asp-action="Index" style="color:white;">
                         <img style="width:22px;" src="~/img/mapas-e-bandeiras.png" />
                         <span>&nbsp;Destinos</span>
-                        </a>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" asp-controller="Favoritos" asp-action="Index" style="color:white;">
@@ -52,58 +53,28 @@
         </div>
     </nav>
 
-
-    <div data-aos="fade-up" style="width: 100%; display: flex; align-content: center; align-items: center; text-align: center; justify-content: center; margin-top:45px;">
-        <img src="~/img/telainicial.PNG" style="width:80%; box-shadow:5px 5px 5px grey;" alt="Minha Imagem">
-    </div>
-
-    <div data-aos="fade-up" style="width: 100%; display: flex;  justify-content: center; margin-top:30px;">
-        <div style="width: 80%;">
-            <h1 style="font-size:40px;font-weight:bold;">Temos ótimas propostas para você curtir sua viagem com a sua família!</h1>
-            <hr />
-            <p style="font-size:22px">
-                Além de termos ótimas opções para você fazer uma viagem divertida e de acordo com os seus gostos, garantimos essas viagens com lugares bonitos e ambientes agradáveis para a sua diversão.
-
-            </p>
-
-            <h2 style="font-size: 40px; font-weight: bold; margin-top: 70px;">
-                Estados mais visitados do brasil
-            </h2>
-            <hr />
+    <div data-aos="fade-up" style="display:flex; flex-direction:column; justify-content: center; align-content: center; align-items: center;">
+        <div style="width:80%;">
+            <h1 style="margin-top:45px; font-weight:bold;">Seus Pontos Turísticos Favoritos</h1>
+            <span>0 Itens</span>
         </div>
-
     </div>
-    <div data-aos="fade-up">
-        <div class="turismo" style="display:flex; align-content: center; align-items: center; text-align: center; justify-content: center; width: 100%;">
-            <div class="row" style="width: 80%;">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img style="height:240px;" src="~/img/Melhor-Hotel-Luxo (1).jpg" alt="Piauí">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img style="height:240px;" src="~/img/restaurante1.webp" alt="Mato Grosso">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img style="height:240px;" src="~/img/viajar-para-a-praia-640w.webp" alt="Ceará">
-                        <div class="card-body">
-                        </div>
-                    </div>
+
+    <div data-aos="fade-up" style="width: 100%; display: flex; align-content: center; align-items: center; justify-content: center; margin-top:10px;">
+        <div style="width:80%;">
+            <div class="card" style="width: 18rem;">
+                <img src="~/img/imagem.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Escolha seu Destino Favorito</h5>
+                    <a href="#" class="btn btn-primary">Ir</a>
                 </div>
             </div>
         </div>
+      
     </div>
+
 </body>
 <script>
     AOS.init();
 </script>
 </html>
-
-
