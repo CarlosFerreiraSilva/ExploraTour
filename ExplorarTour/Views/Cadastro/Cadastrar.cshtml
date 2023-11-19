@@ -176,14 +176,14 @@
                                             <div class="content">
                 <img style="width:50%;" src="~/img/ExploraTour.jpg"
                      alt="Nao fue" />
-                                                <form class="content__form">
+                <form class="content__form" method="post" action="Login">
                                                     <div class="content__inputs">
-                                                        <label>
-                                                            <input required="" type="text">
+                                                        <label for="email">
+                            <input required="" id="email" name="email" type="text">
                                                             <span>Email</span>
                                                         </label>
-                                                        <label>
-                                                            <input required="" type="password">
+                        <label for="senha">
+                            <input required="" id="senha" name="senha" type="text">
                                                             <span>Senha</span>
                                                         </label>
                                                     </div>
@@ -199,10 +199,10 @@
                                           <span>
                                                <a class="nav-link" asp-controller="Cadastro" asp-action="Login">Ainda não tem uma conta?</a>
                                           </span>
-                   
-                                          
-                                        
-                                    </button>
+
+                        @ViewBag.login
+
+                    </button>
      
                    
                                                     
@@ -210,6 +210,7 @@
                                             </div>
                                         </div>
 
+  
         <div id="divtabela">
             <table class="table table-striped">
                 <thead>

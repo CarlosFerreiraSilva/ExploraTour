@@ -10,6 +10,7 @@ namespace ExplorarTour.Controllers
         public IActionResult Index()
         {
             ViewBag.listaCard = dados.getTodosCards();
+            ViewBag.listaCardCount = dados.getTodosCards().Count();
             return View();
         }
 
@@ -72,5 +73,19 @@ namespace ExplorarTour.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Pesquisar(string termoPesquisa)
+        {
+
+     
+                // Lógica de pesquisa aqui (por exemplo, consultar no banco de dados)
+               var produtos = dados.getTodosCards()
+                    .Where(p => p.CANome.Contains(termoPesquisa, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            
+ 
+
+            // Retornar os resultados da pesquisa para a exibição
+            return PartialView("_ResultadoPesquisa", produtos);
+        }
     }
 }

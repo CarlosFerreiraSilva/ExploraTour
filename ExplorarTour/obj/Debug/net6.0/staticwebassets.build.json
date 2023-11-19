@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Dm9gH2UmfqfPwQOCZULcPt/E7CqfU0yE8AOrTq/kuHU=",
+  "Hash": "ZyWs5Ogz67G/rhK+1VG99iF+rGa07qe9TbUlTqYDUvc=",
   "Source": "ExplorarTour",
   "BasePath": "_content/ExplorarTour",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\cancelar.png",
+      "SourceId": "ExplorarTour",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\",
+      "BasePath": "_content/ExplorarTour",
+      "RelativePath": "img/cancelar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\cancelar.png"
+    },
+    {
       "Identity": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\casa (1).png",
       "SourceId": "ExplorarTour",
       "SourceType": "Discovered",
@@ -134,6 +151,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\ExploraTour.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\favorito (1).png",
+      "SourceId": "ExplorarTour",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\",
+      "BasePath": "_content/ExplorarTour",
+      "RelativePath": "img/favorito (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\favorito (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\favorito (2).png",
+      "SourceId": "ExplorarTour",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\",
+      "BasePath": "_content/ExplorarTour",
+      "RelativePath": "img/favorito (2).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\favorito (2).png"
     },
     {
       "Identity": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\favorito.png",

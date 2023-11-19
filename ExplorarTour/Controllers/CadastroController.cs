@@ -16,6 +16,13 @@ namespace ExplorarTour.Controllers
         }
 
         [HttpPost]
+        public IActionResult Login(string email, string senha)
+        {
+            ViewBag.login = dados.getTodosAluno().Where(x => x.Email == email).Where(x=> x.Senha == senha);
+            return View();
+        }
+
+        [HttpPost]
         public IActionResult Create(string nome, string senha, string email)
         {
 

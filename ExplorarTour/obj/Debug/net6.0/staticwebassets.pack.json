@@ -21,12 +21,24 @@
       "PackagePath": "staticwebassets\\img\\Melhor-Hotel-Luxo (1).jpg"
     },
     {
+      "Id": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\cancelar.png",
+      "PackagePath": "staticwebassets\\img\\cancelar.png"
+    },
+    {
       "Id": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\casa (1).png",
       "PackagePath": "staticwebassets\\img\\casa (1).png"
     },
     {
       "Id": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\casa.png",
       "PackagePath": "staticwebassets\\img\\casa.png"
+    },
+    {
+      "Id": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\favorito (1).png",
+      "PackagePath": "staticwebassets\\img\\favorito (1).png"
+    },
+    {
+      "Id": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\favorito (2).png",
+      "PackagePath": "staticwebassets\\img\\favorito (2).png"
     },
     {
       "Id": "C:\\Users\\nanny\\OneDrive\\Documentos\\ExploraTour\\ExplorarTour\\wwwroot\\img\\favorito.png",

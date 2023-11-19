@@ -16,6 +16,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
+
+        html,body{
+            margin:0;
+            border:0;
+            width:100%;
+            height:100%;
+        }
         .card {
             margin-bottom: 10px;
         }
@@ -67,13 +74,13 @@
     <div data-aos="fade-up" style="display:flex; flex-direction:column; justify-content: center; align-content: center; align-items: center;">
         <div style="width:80%;">
             <h1 style="margin-top:45px; font-weight:bold;">Seus Pontos Turísticos Favoritos</h1>
-            <span>0 Itens</span>
+            <span>@ViewBag.listaCardFavoritoCount Itens</span>
         </div>
     </div>
 
     <div data-aos="fade-up" style="width: 100%; display: flex; align-content: center; align-items: center; justify-content: center; margin-top:10px;">
         <div style="width:80%;  display: grid;  grid-template-columns: repeat(3, 1fr); grid-column-gap: 10px; grid-row-gap: 1.2em;">
-            @if (@ViewBag.listaCardFavorito != null)
+            @if (@ViewBag.listaCardFavoritoCount != 0)
             {
                 @foreach (var item in @ViewBag.listaCardFavorito)
                 {
@@ -82,7 +89,18 @@
                         <div class="card-body">
                             <h5 class="card-title">@item.CANome</h5>
                             <p class="card-text">@item.CADescricaoP</p>
-                            <a href="/Destinos/Descricao/@item.CAID" class="btn btn-primary">Viajar</a>
+        
+                            <div style="display: flex; justify-content: space-between; ">
+                                <a href="/Destinos/Descricao/@item.CAID" class="btn btn-primary">Viajar</a>
+                              
+                                
+
+                                    <a href="/Favoritos/Favoritar/@item.CAID"> <img src="~/img/cancelar.png" /></a>
+                                
+
+
+                            </div>
+
                         </div>
                     </div>
                 }
