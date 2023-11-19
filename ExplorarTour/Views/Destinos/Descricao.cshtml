@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<nav class="navbar navbar-expand-lg " style="background-color:rgba(45,136,253,1); color:white;">
+    <a class="navbar-brand" asp-controller="Home" asp-action="Index" style="color:white; font-weight:bold;">Explora Tour</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+
+                <a class="nav-link" asp-controller="Home" asp-action="Index" style="color:white; display:flex;">
+                    <img style="width:22px;" src="~/img/casa (1).png" />
+                    <span>&nbsp;Início</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Destinos" asp-action="Index" style="color:white;">
+                    <img style="width:22px;" src="~/img/mapas-e-bandeiras.png" />
+                    <span>&nbsp;Destinos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Favoritos" asp-action="Index" style="color:white;">
+                    <img style="width:22px;" src="~/img/favorito.png" />
+                    <span>&nbsp;Favoritos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Cadastro" asp-action="Cadastrar" style="color:white;">
+                    <img style="width:22px;" src="~/img/pessoa.png" />
+                    <span>&nbsp;Login</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div data-aos="fade-up" style="width: 100%; display: flex;  justify-content: center; margin-top:30px;">
+    <div style="width: 80%;">
+        @if (@ViewBag.cardAtualizar.CAImagem == null)
+        {
+        <img style="width:100%; height:60%;" src="~/img/imagem.png" class="card-img-top" alt="...">
+        }
+<h5 class="card-title">@ViewBag.cardAtualizar.CAID</h5>
+<p class="card-text">@ViewBag.cardAtualizar.CADescricaoG</p>
+<a href="/Destinos" class="btn btn-primary">Voltar</a>
+    </div>
+</div>

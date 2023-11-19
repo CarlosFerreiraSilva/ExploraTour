@@ -209,6 +209,31 @@
                                                 </div>
                                             </div>
                                         </div>
+
+        <div id="divtabela">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">SobreNome</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in @ViewBag.listaAluno)
+                    {
+                        <tr>
+                            <td>@item.Nome</td>
+                            <td>@item.Senha</td>
+                            <td>@item.Email</td>e
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </body>
     <script>
         AOS.init();

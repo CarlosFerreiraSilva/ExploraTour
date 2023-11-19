@@ -1,0 +1,226 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <head>
+    <style>
+        .content i {
+            margin-bottom: 41px;
+        }
+
+        .container {
+            border-radius: 8px;
+            box-shadow: 5px 5px 5px gray;
+            padding: 50px 40px 20px 40px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            color: #737373;
+            border: 1px solid rgb(219, 219, 219);
+            text-align: center;
+            background: white;
+        }
+
+            .container svg {
+                width: 16px;
+                height: auto;
+            }
+
+        .content__form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 14px;
+        }
+
+        .content__inputs {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+        }
+
+        .content__form label {
+            border: 1px solid rgb(219, 219, 219);
+            display: flex;
+            align-items: center;
+            position: relative;
+            min-width: 268px;
+            height: 38px;
+            background: rgb(250, 250, 250);
+            border-radius: 3px;
+        }
+
+        .content__form span {
+            position: absolute;
+            text-overflow: ellipsis;
+            transform-origin: left;
+            font-size: 12px;
+            left: 8px;
+            pointer-events: none;
+            transition: transform ease-out .1s
+        }
+
+        .content__form input {
+            width: 100%;
+            background: inherit;
+            border: 0;
+            outline: none;
+            padding: 9px 8px 7px 8px;
+            text-overflow: ellipsis;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+
+            .content__form input:valid + span {
+                transform: scale(calc(10 / 12)) translateY(-10px);
+            }
+
+            .content__form input:valid {
+                padding: 14px 0 2px 8px;
+                font-size: 12px;
+            }
+
+        .content__or-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            column-gap: 18px;
+            margin-top: 18px;
+        }
+
+            .content__or-text span:nth-child(3),
+            .content__or-text span:nth-child(1) {
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: rgb(219, 219, 219);
+            }
+
+        .content__forgot-buttons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 28px;
+            row-gap: 14px;
+        }
+
+            .content__forgot-buttons button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 8px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 12px;
+                color: #00376b;
+            }
+
+                .content__forgot-buttons button:first-child {
+                    color: #385185;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+        .content__form button {
+            background: rgb(0, 149, 246);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 7px 16px;
+            cursor: pointer;
+        }
+
+            .content__form button:hover {
+                background: rgb(24, 119, 242);
+            }
+
+            .content__form button:active:not(:hover) {
+                background: rgb(0, 149, 246);
+                opacity: .7;
+            }
+
+        body {
+            align-items: center;
+            justify-content: center;
+        }
+
+        }
+    </style>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(45,136,253,1); color:white;">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index" style="color:white; font-weight:bold;">Explora Tour</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+
+                    <a class="nav-link" asp-controller="Home" asp-action="Index" style="color:white; display:flex;">
+                        <img style="width:22px;" src="~/img/casa (1).png" />
+                        <span>&nbsp;Início</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Destinos" asp-action="Index" style="color:white;">
+                        <img style="width:22px;" src="~/img/mapas-e-bandeiras.png" />
+                        <span>&nbsp;Destinos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Favoritos" asp-action="Index" style="color:white;">
+                        <img style="width:22px;" src="~/img/favorito.png" />
+                        <span>&nbsp;Favoritos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Cadastro" asp-action="Cadastrar" style="color:white;">
+                        <img style="width:22px;" src="~/img/pessoa.png" />
+                        <span>&nbsp;Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div data-aos="fade-up" style="width: 100%; display: flex;  justify-content: center; margin-top:30px;">
+        <div style="width: 80%;">
+
+
+
+            <form onsubmit="return sim();" method="post" action="Create" class="content__form" style="display: block">
+
+                <div class="content__inputs">
+                    <label for="nome">
+                     
+                        <input type="text" id="nome" name="nome" required>
+                           <span>Nome do Destino</span>
+
+                    </label>
+                    <label for="descricaop">
+                    
+                        <input type="text" id="descricaop" name="descricaop" required>
+                        <span>Descrição Resumida</span>
+
+                    </label>
+                    <label for="descricaog">
+                   
+                        <input type="text" id="descricaog" name="descricaog" required>
+                        <span>Descrição Extensa</span>
+                    </label>
+
+                </div>
+
+                <br>
+                <button type="submit">CADASTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    </body>
+</html>

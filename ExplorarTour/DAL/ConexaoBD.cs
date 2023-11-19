@@ -2,18 +2,19 @@
 
 namespace ExplorarTour.DAL
 {
-        public class ConexaoBD
+    public class ConexaoBD
+    {
+        private static SqlConnection Banco;
+        public static SqlConnection getConexao()
         {
-            private static SqlConnection Banco;
-            public static SqlConnection getConexao()
+            if (Banco == null)
             {
-                if (Banco == null)
-                {
-                    Banco = new SqlConnection(@"Server=GINELMA\SQLEXPRESS; Database=DBExploraTour;");
-                }
+                Banco = new SqlConnection(@"Server=GINELMA\SQLEXPRESS;Database=DBExploraTour;Integrated Security=True;");
+            }
 
                 return Banco;
             }
         }
-    
-}
+
+    }
+
