@@ -22,10 +22,6 @@ namespace ExplorarTour.Controllers
             a = dados.getTodosAluno();
             bool user = a.Any(x => x.Email == email && x.Senha == senha);   
 
-            if (user)
-            {
-                FormsAuthentication.SetAuthCookie 
-            }
             return View();
         }
 
