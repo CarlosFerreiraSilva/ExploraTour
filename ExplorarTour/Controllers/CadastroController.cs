@@ -18,14 +18,20 @@ namespace ExplorarTour.Controllers
         [HttpPost]
         public IActionResult Login(string email, string senha)
         {
-            ViewBag.login = dados.getTodosAluno().Where(x => x.Email == email).Where(x=> x.Senha == senha);
+            List<Usuario> a = new List<Usuario>();  
+            a = dados.getTodosAluno();
+            bool user = a.Any(x => x.Email == email && x.Senha == senha);   
+
+            if (user)
+            {
+                FormsAuthentication.SetAuthCookie 
+            }
             return View();
         }
 
         [HttpPost]
         public IActionResult Create(string nome, string senha, string email)
         {
-
 
             Usuario novoAluno = new Usuario();
 
